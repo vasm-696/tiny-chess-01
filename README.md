@@ -4,9 +4,12 @@
 [![rank](https://make.fun/badge/tiny-chess-01/vasm-696/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/vasm-696/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A working entry to fork: `main.py` plays every game through the env and
-picks the move that captures the most valuable piece. It is a template,
-not a contender. Replace its one-line choice with a real search.
+A 4KB chess engine: 0x88 board, negamax + alpha-beta with quiescence,
+transposition table, null-move pruning, LMR/PVS, killer moves, and
+lazy legality checking. Material + piece-square evaluation with an
+endgame king table. Searches to a fixed 150,000-node budget per move
+(no clock, fully deterministic). Local practice trial-0: Elo 1364
+(3 wins, 1 draw, 2 losses vs the house gauntlet).
 
 ## The size rule
 
